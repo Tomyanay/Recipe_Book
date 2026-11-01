@@ -35,7 +35,7 @@ function Extra_Info() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-10 ">{recipe.name}</h1>
         <NavLink className='flex items-center absolute top-3 left-3 text-xl lg:text-2xl' to={"/"}><IoMdArrowBack/>Back Home</NavLink>
 
-        <div className="grid grid-cols-2 mx-0.5 sm:gap-5 sm:mx-[10%] text-lg sm:text-xl font-semibold">
+        <div className="grid grid-cols-2 mx-0.5 sm:gap-5 sm:mx-[10%] text-base sm:text-xl font-semibold">
 
          <section>
           <p>Difficulty to make <span style={{color:Diff}}>{recipe.difficulty}</span></p>
