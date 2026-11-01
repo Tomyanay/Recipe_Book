@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+
+/* Css veriables for tailwind */
+@theme {
+  /* Primary brand colors */
+  --color-primary: #D16A43; /* Warm paprika */
+  --color-primary-light: #E98A63;
+  --color-primary-dark: #A44F31;
+
+  /* Neutral UI colors */
+  --color-bg: #f5f0e5;           
+  --color-surface: #FFFFFF;      
+  --color-border: #dbd8d1;       
+  --color-text: #3A2F2A;         
+  --color-text-muted: #7B6F68;   
+
+  /* Status colors */
+  --color-warning: #F2C94C; /* Warnings */
+  --color-danger: #EB5757; /* Errors */
+
+  /* Fonts */
+  --font-PlayFair:'Playfair+Display';
+  --font-Inter:'Inter'
+}
+
+/* Default decos for tags */
+@layer base{
+    body{@apply font-Inter bg-bg capitalize}
+    h1,h2,h3{@apply font-PlayFair}
+    a{@apply text-xl text-blue-900  hover:text-blue-200 hover:underline decoration-blue-200}
+    span{@apply font-semibold}
+}
+
+/* Remove scrolling in overflow auto */
+@layer utilities{
+  .no-Scrollbar{
+     scrollbar-width:none;
+     
+     &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
